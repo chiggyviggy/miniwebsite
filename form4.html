@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customization</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        #heading{
+            text-align: center;
+            color: white;
+            background-color: crimson;
+            width: 800px;
+            margin-left: 270px;
+            border-radius: 10px;
+        }
+
+        #bod {
+            background-color: crimson;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid crimson;
+        }
+
+        #test2 {
+            display:none;
+        }
+
+        #button1 {
+            display:none;
+        }
+
+        #button2 {
+            display:none;
+        }
+
+        #hiddenbullets {
+            display:none;
+        }
+
+        #hiddenguns {
+            display:none;
+        }
+
+        #hiddenskins {
+            display:none;
+        }
+
+    </style>
+        
+    <script>
+
+        function check(){
+            if (["options"] != 3 ){
+                alert("Sorry, we have only 3 options. Deal with it");
+            }
+            else if (["options"] == 3) {
+                alert("Sure sire!");
+            }
+            document.getElementById("button1").style.display = "inline";
+            document.getElementById("button2").style.display = "inline";
+        }
+        
+        function toshow(){
+            document.getElementById("hiddenbullets").style.display = "block";
+        }
+
+        function tohide(){
+            document.getElementById("hiddenbullets").style.display = "none";
+        }
+
+        function hideguns(){
+            document.getElementById("hiddenguns").style.display = "none";
+        }
+
+        function showguns(){
+            document.getElementById("hiddenguns").style.display = "block";
+        }
+
+        function showskin(){
+            document.getElementById("hiddenskins").style.display = "block";
+        }
+
+        function hideskin(){
+            document.getElementById("hiddenskins").style.display = "none";
+        }
+
+        function test(){
+            document.getElementById("test").innerHTML = "21";
+            document.getElementById("test2").style.display = "block";
+        }
+          
+        function report(){
+            var x = document.getElementById("form").elements['guns'].value;
+            var y = document.getElementById("form").elements['skin'].value;
+            var z = document.getElementById("form").elements['bullet'].value;
+            var message = "Your Customization report!\nGun = " +x + "\nSkin = " + y + "\nBullet = " + z + "\nThank you for using the customization feature";
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <div id="heading">
+        <h2>Customization Page</h2>
+        <p>This page is for your Customization. Feel free to try diff approaches</p>
+        <div>
+            <p><span style="padding-right:10px"><a href="index.html"><u>HOME</u></a></span> <span style="padding-right: 10px;"><a href="form1.html"><u>GUNS</u></a></span> <span style="padding-right: 10px;"><a href="form3.html"><u>BULLETS</u></a></span> <span style="padding-right: 10px;"><a href="form2.html"><u>QUERY</u></a></span></p>
+        </div>
+    </div>
+
+    <div id="bod">
+        <form id="form">
+            <fieldset>
+                <legend>Time to customize!</legend>
+                <p>Security Check to see if javascript is working</p>
+                <p id="test2" style="color: crimson;">(If you can see the addition then javascript is working on your browser!)</p>
+                <span>9 + 1 = </span>
+                <span id="test"></span><br>
+                <button type="button" onclick="test()">Check</button><br><br><br>
+
+                <p style="text-shadow: 1px 1px 5px crimson; color: crimson;">WARNING!</p>
+                <label>We have hidden the images and options for security reasons. you can unhide and hide the options using the buttons</label><br><br>
+                <label>1. Choose your gun:</label><br>
+                <label>How many options do you want?</label>
+                <input type="number" name="options" min="1" max="10">
+                <button type="button" onclick="check()">Select</button><br>
+                <button id="button1" type="button" onclick="showguns()">Show guns</button>
+                <button id="button2" type="button" onclick="hideguns()">Hide guns</button><br><br>
+                <div id="hiddenguns">
+                    <label>M4A1: </label>
+                    <input type="radio" value="M4A1" name="guns" style="margin-right: 5px;"><br>
+
+                    <label>TAVOR 21: </label>
+                    <input type="radio" value="tavor21" name="guns" style="margin-right: 5px;"><br>
+
+                    <label>BARRET M95 </label>
+                    <input type="radio" value="barretm95" name="guns" style="margin-right: 5px;"><br>
+                </div><br><br><br><br>
+
+                <label>2. Choose your camouflage type:</label>
+                <button type="button" onclick="showskin()">Show</button>
+                <button type="button" onclick="hideskin()">Hide</button><br><br>
+                <div id="hiddenskins">
+                    <img src="Images/desert camo.jpeg" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Desert camo" style="margin-right: 10px;">
+
+                    <img src="Images/urban jungle camo.jpeg" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Urban jungle camo" style="margin-right: 10px;">
+
+                    <img src="Images/water camo.jpeg" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Water camo" style="margin-right: 10px;">
+
+                    <img src="Images/digital camp.png" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Digital camo" style="margin-right: 10px;">
+
+                    <img src="Images/gold camo.jpeg" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Gold camo" style="margin-right: 10px;">
+
+                    <img src="Images/snow camo.jpeg" width="150px" height="150px">
+                    <input type="radio" name="skin" value="Snow camo" style="margin-right: 10px;">
+                </div><br><br><br><br>
+
+                <label>3. Choose your bullet type:</label>
+                <button type="button" onclick="toshow()">Show</button>
+                <button type="button" onclick="tohide()">Hide</button><br><br>
+                <div id="hiddenbullets">
+                    <img src="Images/22LR.jpg" width="75px" height="75px">
+                    <input type="radio" value="22LR" name="bullet" style="margin-right: 5px;">
+                
+                    <img src="Images/45acp.jpeg" width="75px" height="75px">
+                    <input type="radio" value="45ACP" name="bullet" style="margin-right: 5px;">
+
+                    <img src="Images/springfield.jpeg" width="75px" height="75px">
+                    <input type="radio" value=".30-06 springfield" name="bullet" style="margin-right: 5px;">
+
+                    <img src="Images/7.62x39mm.jpeg" width="75px" height="75px">
+                    <input type="radio" value="7.62x39mm" name="bullet" style="margin-right: 5px;">
+
+                    <img src="Images/9mm.jpeg" width="75px" height="75px">
+                    <input type="radio" value="9mm" name="bullet" style="margin-right: 5px;">
+                </div><br><br><br>
+                
+                <button type="button" onclick="report()">Submit</button>
+                <input type="reset" value="Reset"> 
+                <button type="button" onclick="alert('Sorry!, Currently we havent added this feature')">Report</button><br><br>
+               
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

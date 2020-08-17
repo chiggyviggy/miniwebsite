@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: salmon;
+        }
+
+        #heading {
+            background-color:silver;
+            color: black;
+            text-align: center;
+            width: 800px;
+            margin-left: 270px;
+            border-radius: 10px;
+        }
+
+        #heading > p,h2{
+            text-shadow: 2px 2px 5px salmon;
+        }
+
+        .bod h3 {
+            text-align: center;
+        }
+
+        .bod {
+            background-color: silver;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        .bod > table,tr,td {
+            padding: 10px;
+            border: 2px solid salmon;
+            border-collapse: collapse;
+            background-color: black;
+            color: silver
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h2>Bullets N' Leads</h2>
+        <p>A match made in heaven. We do custom orders on bullets as well as the normal caliber ones.</p>
+        <div>
+            <p><span style="padding-right:10px"><a href="index.html"><u>HOME</u></a></span> <span style="padding-right: 10px;"><a href="form1.html"><u>GUNS</u></a></span> <span style="padding-right: 10px;"><a href="form4.html"><u>CUSTOMIZATION</u></a></span> <span style="padding-right: 10px;"><a href="form2.html"><u>QUERY</u></a></span></p>
+        </div>
+    </div>
+
+    <div class="bod">
+        <h3>Available Calibers</h3>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 150px; height: 150px;"><img src="Images/22LR.jpg" width="150px" height="150px"></td>
+                <td>.22LR (Long Rifle)</td>
+                <td><a onclick="alert('Available')"><span style="color: blue;"><u>Click here</u></span></a> to check Availability</td>
+                <td>Pricing = $20 per dozen</td>
+                <td>Read about the bullet <a href="https://en.wikipedia.org/wiki/.22_Long_Rifle" target="_blank">here</a></td>
+            </tr>
+            <tr>
+                <td style="width: 150px; height: 150px;"><img src="Images/45acp.jpeg" width="150px" height="150px"></td>
+                <td>.45 ACP (Automatic colt pistol)//td>
+                    <td><a onclick="alert('Not Available')"><span style="color: blue;"><u>Click here</u></span></a> to check Availability</td>
+                <td>Pricing = $50 per dozen</td>
+                <td>Read about the bullet <a href="https://en.wikipedia.org/wiki/.45_ACP" target="_blank">here</a></td>
+            </tr>
+            <tr>
+                <td style="width: 150px; height: 150px;"><img src="Images/9mm.jpeg" width="150px" height="150px"></td>
+                <td>9mm NATO</td>
+                <td><a onclick="alert('Available')"><span style="color: blue;"><u>Click here</u></span></a> to check Availability</td>
+                <td>Pricing = $80 per dozen</td>
+                <td>Read about the bullet <a href="https://en.wikipedia.org/wiki/9_mm_caliber" target="_blank">here</a></td>
+            </tr>
+            <tr>
+                <td style="width: 150px; height: 150px;"><img src="Images/7.62x39mm.jpeg" width="150px" height="150px"></td>
+                <td>7.62x39mm</td>
+                <td><a onclick="alert('Available')"><span style="color: blue;"><u>Click here</u></span></a> to check Availability</td>
+                <td>Pricing = $100 per dozen</td>
+                <td>Read about the bullet <a href="https://en.wikipedia.org/wiki/7.62%C3%9739mm" target="_blank">here</a></td>
+            </tr>
+            <tr>
+                <td style="width: 150px; height: 150px;"><img src="Images/springfield.jpeg" width="150px" height="150px"></td>
+                <td>.30-06 Springfield</td>
+                <td><a onclick="alert('Not Available')"><span style="color: blue;"><u>Click here</u></span></a> to check Availability</td>
+                <td>Pricing = $100 per dozen</td>
+                <td>Read about the bullet <a href="https://en.wikipedia.org/wiki/.30-06_Springfield" target="_blank">here</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
