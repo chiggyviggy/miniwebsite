@@ -9,4 +9,7 @@ from there you can check other webpages in order
 4. form2.html
 5. form5.php
 
+
+NOTE: form2.html is a form which submits its answers to form5.php
 NOTE: form5.php is a php file and only works in a webserver or if you are using a php parser
+
