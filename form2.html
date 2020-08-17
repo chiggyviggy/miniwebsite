@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form 2</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #heading {
+                background-color:black;
+                color:white;
+                border-radius: 10px;
+                width: 800px;
+                margin-left: 270px;
+                text-align: center;
+            }
+
+            #link {
+                color:blueviolet;
+            }
+
+            body {
+                background-color:blueviolet;
+            }
+
+            fieldset {
+                border: 2px solid blueviolet;
+            }
+
+            form {
+                margin-top:10px;
+                background-color: black;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color:white;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <h2 style="text-align: center;"><b>Hello Users!</b></h2>
+            <div>
+                <span>This is a Evaluation page for the form 1,</span>
+                <p><span style="padding-right:10px"><a href="index.html"><u>HOME</u></a></span> <span style="padding-right: 10px;"><a href="form1.html"><u>GUNS</u></a></span> <span style="padding-right: 10px;"><a href="form4.html"><u>CUSTOMIZATION</u></a></span> <span style="padding-right: 10px;"><a href="form3.html"><u>BULLETS</u></a></span></p>
+            </div>
+        </div>
+
+        <div id="form">
+            <form action="form5.php" method="POST">
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" name="fullname" placeholder="Full name" style="width: 300px;" required><br><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="10" max="99 "style="width: 300px;"><br><br>
+
+                    <label for="phno">Phone No:</label><br>
+                    <input type="number" id="phno" name="phno" style="width: 300px;"><br><br>
+                </fieldset><br>
+                
+                <fieldset>
+                    <legend>Questions:</legend>
+                    <label>Answers the question by using a rating scheme where 0 is bad and 5 is excellent</label><br><br><br>
+                    
+                    <label>Q1. How was the color scheme of the previous webpage?</label><br><br>
+                    <input type="radio" name="Q1" value="1">
+                    <label for="one">1</label>
+                    <input type="radio" name="Q1" value="2">
+                    <label for="two">2</label>
+                    <input type="radio" name="Q1" value="3">
+                    <label for="three">3</label>
+                    <input type="radio" name="Q1" value="4">
+                    <label for="four">4</label>
+                    <input type="radio" name="Q1" value="5">
+                    <label for="five">5</label><br><br><br>
+
+                    <label>Q2. How is the color scheme of this webpage</label><br><br>
+                    <input type="radio" name="Q2" value="1">
+                    <label for="one">1</label>
+                    <input type="radio" name="Q2" value="2">
+                    <label for="two">2</label>
+                    <input type="radio" name="Q2" value="3">
+                    <label for="three">3</label>
+                    <input type="radio" name="Q2" value="4">
+                    <label for="four">4</label>
+                    <input type="radio" name="Q2" value="5">
+                    <label for="five">5</label><br><br><br>
+
+                    <label for="religion">Q3. Which religion do you follow?</label><br><br>
+                    <select id="religion" name="religion" required>
+                        <option value="christian">Christian</option>
+                        <option value="muslim">Muslim</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="anti-religion">Anti-Religion</option>
+                        <option value="atheist">Atheist</option>
+                    </select><br><br><br>
+
+                    <label for="mess">Q4. Tell me about yourself in about 2 lines.</label><br><br>
+                    <textarea id="mess" name="message" rows="5" cols="60"></textarea><br><br>
+
+                    <input type="submit">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
